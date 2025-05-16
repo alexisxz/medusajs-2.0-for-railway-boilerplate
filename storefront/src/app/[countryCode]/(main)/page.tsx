@@ -1,9 +1,9 @@
 import { getCollectionsWithProducts } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
+import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import { Carousel } from "components/Carousel"
 import { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -28,24 +28,24 @@ export default async function Home({
       {/* <FeaturedProducts collections={collections} region={region} /> */}
 
       {/* HERO */}
-      <div className="min-h-[calc(100vh-63px)]">
+      <div className="md:min-h-[calc(100vh-63px)]">
         <div
-          className="relative min-h-[calc(100vh-63px)] bg-top bg-contain repeat-infinite"
+          className="relative flex flex-col md:min-h-[calc(100vh-63px)] bg-top bg-contain repeat-infinite gap-6"
           style={{ backgroundImage: "url('/images/content/bg-stars.png')" }}
         >
           {/* ROBOT */}
-          <div className="absolute bottom-0 h-[80vh] flex flex-col justify-end items-end">
+          <div className="md:absolute bottom-0 md:h-[80vh] flex flex-col justify-end items-end order-last">
             <Image
               src="/images/content/home-hero_bot.png"
               width={2880}
               height={1500}
               alt="Living room with gray armchair and two-seater sofa"
-              className="object-contain mt-auto max-h-[90vh]"
+              className="object-contain mt-auto md:max-h-[90vh]"
             />
           </div>
 
           {/* HEADING */}
-          <section className="pt-24 content-container">
+          <section className="pt-12 content-container">
             <div>
               <div className="max-w-xl">
                 <h1 className="text-xl text-center md:text-left md:text-5xl">
@@ -88,27 +88,31 @@ export default async function Home({
           {/* BACKGROUND IMAGE */}
 
           <div
-            className="py-12 bg-top bg-contain repeat-infinite"
+            className="bg-top bg-contain  repeat-infinite"
             style={{ backgroundImage: "url('/images/content/bg-stars.png')" }}
           >
             <Carousel
               heading={
-                <h2 className="text-xl uppercase md:text-3xl">PRODUCTS</h2>
+                <h2 className="text-xl uppercase md:text-5xl">PRODUCTS</h2>
               }
               button={
                 <>
-                  <Link
+                  <LocalizedClientLink
                     href="/store"
-                    className="flex-1 h-full max-md:hidden md:h-auto border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                    size="md"
+                    className="p-2 flex-1 h-full max-md:hidden md:h-auto border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                    variant="outline"
                   >
                     Shop
-                  </Link>
-                  <Link
+                  </LocalizedClientLink>
+                  <LocalizedClientLink
                     href="/store"
-                    className="md:hidden border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                    size="sm"
+                    className="md:hidden border-[#77C091] text-[#77C091] rounded-lg uppercase border p-2"
+                    variant="outline"
                   >
                     Shop
-                  </Link>
+                  </LocalizedClientLink>
                 </>
               }
             >
@@ -133,7 +137,7 @@ export default async function Home({
 
         {/* CHRISTIAN SECTION */}
         <section
-          className="py-12 content-container"
+          className="py-12"
           style={{
             backgroundImage: `url('/images/content/bg-blue-ball_top.png'), url('/images/content/bg-stars.png')`,
             backgroundRepeat: "no-repeat, repeat", // or 'no-repeat, no-repeat'
@@ -141,7 +145,7 @@ export default async function Home({
             backgroundSize: "cover, contain", // or 'cover, cover'
           }}
         >
-          <div>
+          <div className="max-w-6xl px-6 mx-auto">
             <div className="col-span-full">
               <div className="flex flex-col gap-8 text-center md:text-left md:items-center md:flex-row">
                 <Image
@@ -152,7 +156,7 @@ export default async function Home({
                   className="object-contain object-center w-full max-w-md"
                 />
                 <div>
-                  <p className="text-sm whitespace-pre-line">{`Hey, I'm Christian!
+                  <p className="whitespace-pre-line ">{`Hey, I'm Christian!
                   
                   I've been fascinated by robots since childhood—their shapes, their technology, their stories, just everything! As a trained metalworker, I love creating something unique with my own hands. My passion for design, furniture, and fashion led me to build my first lamp robot in November 2022. 
                   
@@ -175,7 +179,7 @@ export default async function Home({
         >
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-xl uppercase md:text-3xl">Handfactured</h2>
+              <h2 className="text-xl uppercase md:text-5xl">Handfactured</h2>
               <p>
                 {`Handcrafted with passion - this is how Mecha-Nick and his
                 friends are made in a small garage in Luxembourg.`}
@@ -201,22 +205,26 @@ export default async function Home({
         >
           <Carousel
             heading={
-              <h2 className="text-xl uppercase md:text-3xl">IMPRESSIONS</h2>
+              <h2 className="text-xl uppercase md:text-5xl">IMPRESSIONS</h2>
             }
             button={
               <>
-                <Link
+                <LocalizedClientLink
                   href="/store"
-                  className="flex-1 h-full max-md:hidden border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                  size="md"
+                  className="p-2 flex-1 h-full max-md:hidden md:h-auto border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                  variant="outline"
                 >
                   Shop
-                </Link>
-                <Link
+                </LocalizedClientLink>
+                <LocalizedClientLink
                   href="/store"
-                  className="md:hidden border-[#77C091] text-[#77C091] border rounded-lg uppercase"
+                  size="sm"
+                  className="md:hidden border-[#77C091] text-[#77C091] rounded-lg uppercase border p-2"
+                  variant="outline"
                 >
                   Shop
-                </Link>
+                </LocalizedClientLink>
               </>
             }
           >
