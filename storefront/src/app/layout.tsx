@@ -21,7 +21,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
       data-mode="light"
     >
       <body>
-        <main className="relative">{props.children}</main>
+        <main className="relative max-w-[2560px] mx-auto">
+          {props.children}
+        </main>
       </body>
     </html>
   )
