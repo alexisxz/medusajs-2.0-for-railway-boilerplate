@@ -1,7 +1,7 @@
 import React from "react"
 
-import Footer from "@modules/layout/templates/footer"
 import Nav from "@modules/layout/templates/nav"
+import { NewFooter } from "components/NewFooter"
 
 const Layout: React.FC<{
   children: React.ReactNode
@@ -10,7 +10,7 @@ const Layout: React.FC<{
     <div>
       <Nav />
       <main className="relative">{children}</main>
-      <Footer />
+      <NewFooter />
     </div>
   )
 }

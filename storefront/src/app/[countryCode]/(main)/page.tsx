@@ -28,9 +28,9 @@ export default async function Home({
       {/* <FeaturedProducts collections={collections} region={region} /> */}
 
       {/* HERO */}
-      <div className="md:min-h-[calc(100vh-63px)]">
+      <div className="md:min-h-screen">
         <div
-          className="relative flex flex-col md:min-h-[calc(100vh-63px)] bg-top bg-contain repeat-infinite gap-6"
+          className="relative flex flex-col gap-6 bg-top bg-contain md:min-h-screen repeat-infinite"
           style={{ backgroundImage: "url('/images/content/bg-stars.png')" }}
         >
           {/* ROBOT */}
@@ -45,7 +45,7 @@ export default async function Home({
           </div>
 
           {/* HEADING */}
-          <section className="pt-12 content-container">
+          <section className="pt-24 content-container">
             <div>
               <div className="max-w-xl">
                 <h1 className="text-xl text-center md:text-left md:text-5xl">
@@ -88,7 +88,7 @@ export default async function Home({
           {/* BACKGROUND IMAGE */}
 
           <div
-            className="bg-top bg-contain  repeat-infinite"
+            className="bg-top bg-contain repeat-infinite"
             style={{ backgroundImage: "url('/images/content/bg-stars.png')" }}
           >
             <Carousel
