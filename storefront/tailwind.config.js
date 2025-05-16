@@ -59,7 +59,17 @@ module.exports = {
         "3xl": "2rem",
       },
       fontFamily: {
-        sans: ["Blauer Nue", "sans-serif"],
+        blauer: ["var(--font-blauer)", "sans-serif"],
+        sans: [
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Ubuntu",
+          "sans-serif",
+        ],
       },
       keyframes: {
         ring: {
