@@ -11,9 +11,17 @@ export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
 
   return (
-    <div className="sticky inset-x-0 top-0 z-50 group">
-      <header className="relative h-16 mx-auto duration-200 bg-white border-b border-ui-border-base">
-        <nav className="flex items-center justify-between w-full h-full content-container txt-xsmall-plus text-ui-fg-subtle text-small-regular">
+    <div
+      className="sticky inset-x-0 top-0 z-50 text-white bg-black group"
+      style={{
+        backgroundImage: `url('/images/content/bg-stars.png')`,
+        backgroundRepeat: "repeat", // or 'no-repeat, no-repeat'
+        backgroundPosition: "top", // optional custom position
+        backgroundSize: "cover", // or 'cover, cover'
+      }}
+    >
+      <header className="relative h-16 mx-auto duration-200 content-container">
+        <nav className="flex items-center justify-between w-full h-full text-white border-b border-ui-border-base txt-xsmall-plus text-small-regular">
           <div className="flex items-center flex-1 h-full basis-0">
             <div className="h-full">
               <SideMenu regions={regions} />
@@ -23,10 +31,10 @@ export default async function Nav() {
           <div className="flex items-center h-full">
             <LocalizedClientLink
               href="/"
-              className="uppercase txt-compact-xlarge-plus hover:text-ui-fg-base"
+              className="uppercase txt-compact-xlarge-plus hover:opactiy-80"
               data-testid="nav-store-link"
             >
-              <div className="text-black hover:opacity-80 w-[150px]">
+              <div className="text-white hover:opacity-80 w-[150px]">
                 <LogoSVG />
               </div>
             </LocalizedClientLink>
@@ -36,7 +44,7 @@ export default async function Nav() {
             <div className="items-center hidden h-full small:flex gap-x-6">
               {process.env.NEXT_PUBLIC_FEATURE_SEARCH_ENABLED && (
                 <LocalizedClientLink
-                  className="hover:text-ui-fg-base"
+                  className="hover:opactiy-80"
                   href="/search"
                   scroll={false}
                   data-testid="nav-search-link"
@@ -45,7 +53,7 @@ export default async function Nav() {
                 </LocalizedClientLink>
               )}
               <LocalizedClientLink
-                className="hover:text-ui-fg-base"
+                className="hover:opactiy-80"
                 href="/account"
                 data-testid="nav-account-link"
               >
@@ -55,7 +63,7 @@ export default async function Nav() {
             <Suspense
               fallback={
                 <LocalizedClientLink
-                  className="flex gap-2 hover:text-ui-fg-base"
+                  className="flex gap-2 hover:opactiy-80"
                   href="/cart"
                   data-testid="nav-cart-link"
                 >

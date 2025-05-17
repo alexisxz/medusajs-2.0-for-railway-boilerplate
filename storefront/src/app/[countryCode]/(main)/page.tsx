@@ -63,7 +63,14 @@ export default async function Home({
           style={{ backgroundImage: "url('/images/content/bg-blue-ball.png')" }}
         >
           <div>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto space-y-8">
+              <Image
+                src={"/images/content/mini-robots.png"}
+                alt="mini robots"
+                width={240}
+                height={55}
+                className="object-contain w-full mx-auto max-w-48"
+              />
               <p className="text-center">
                 Together with my friends, I have landed on your planet - in a
                 small country called Luxembourg, to be precise.
@@ -116,7 +123,7 @@ export default async function Home({
                 </>
               }
             >
-              {impressumImages.map((img, index) => (
+              {productsImage.map((img, index) => (
                 <div
                   key={index}
                   className="w-[70%] sm:w-[60%] lg:w-full max-w-[496px] flex-shrink-0"
@@ -249,6 +256,21 @@ export default async function Home({
     </div>
   )
 }
+
+const productsImage = [
+  {
+    src: "/images/content/robot-red.png",
+    alt: "Product Image 1",
+  },
+  {
+    src: "/images/content/robot-yellow.png",
+    alt: "Product Image 2",
+  },
+  {
+    src: "/images/content/robot-blue.png",
+    alt: "Product Image 3",
+  },
+]
 
 const impressumImages = [
   {

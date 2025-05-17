@@ -23,7 +23,6 @@ export default function Nav1({ regions }: { regions: StoreRegion[] }) {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-  console.log("bla")
 
   return (
     <div className="fixed inset-x-0 top-0 z-50 group">
