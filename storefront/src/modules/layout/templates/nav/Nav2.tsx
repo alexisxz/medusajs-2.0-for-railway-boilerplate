@@ -52,7 +52,7 @@ export default function Nav2({ regions }: { regions: StoreRegion[] }) {
             <Suspense
               fallback={
                 <LocalizedClientLink
-                  className="flex gap-2 hover:text-ui-fg-base"
+                  className="flex gap-2 hover:opacity-80"
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
