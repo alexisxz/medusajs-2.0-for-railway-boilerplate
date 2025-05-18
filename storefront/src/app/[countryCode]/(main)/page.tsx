@@ -6,9 +6,9 @@ import { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: "FAU Ecommerce",
   description:
-    "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    "The FAU Ecommerce is a platform that offers a unique robot lamp collection, designed and handcrafted by Christian in Luxembourg. Each lamp is a one-of-a-kind piece, combining functionality with artistic expression.",
 }
 
 export default async function Home({
