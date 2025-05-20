@@ -12,7 +12,8 @@ import CountrySelect from "../country-select"
 const SideMenuItems = {
   Home: "/",
   Store: "/store",
-  Search: "/search",
+  // REMIMDER: REACTIVE SEARCH IF WANTED
+  // Search: "/search",
   Account: "/account",
   Cart: "/cart",
 }

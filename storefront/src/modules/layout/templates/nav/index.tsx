@@ -42,7 +42,8 @@ export default async function Nav() {
 
           <div className="flex items-center justify-end flex-1 h-full gap-x-6 basis-0">
             <div className="items-center hidden h-full small:flex gap-x-6">
-              {process.env.NEXT_PUBLIC_FEATURE_SEARCH_ENABLED && (
+              {/* REMINDER: REACTIVE SEARCH IF WANTED */}
+              {/* {process.env.NEXT_PUBLIC_FEATURE_SEARCH_ENABLED && (
                 <LocalizedClientLink
                   className="hover:opactiy-80"
                   href="/search"
@@ -51,7 +52,7 @@ export default async function Nav() {
                 >
                   Search
                 </LocalizedClientLink>
-              )}
+              )} */}
               <LocalizedClientLink
                 className="hover:opactiy-80"
                 href="/account"
