@@ -48,7 +48,7 @@ export default async function Home({
           <section className="pt-24 content-container">
             <div>
               <div className="max-w-xl">
-                <h1 className="text-xl text-center md:text-left md:text-5xl">
+                <h1 className="text-3xl text-center md:text-left md:text-5xl">
                   FURNITURES FROM ANOTHER UNIVERSE
                 </h1>
               </div>
@@ -100,7 +100,7 @@ export default async function Home({
           >
             <Carousel
               heading={
-                <h2 className="text-xl uppercase md:text-5xl">PRODUCTS</h2>
+                <h2 className="text-3xl uppercase md:text-5xl">PRODUCTS</h2>
               }
               button={
                 <>
@@ -186,7 +186,7 @@ export default async function Home({
         >
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-xl uppercase md:text-5xl">Handfactured</h2>
+              <h2 className="text-3xl uppercase md:text-5xl">Handfactured</h2>
               <p>
                 {`Handcrafted with passion - this is how Mecha-Nick and his
                 friends are made in a small garage in Luxembourg.`}
@@ -212,7 +212,7 @@ export default async function Home({
         >
           <Carousel
             heading={
-              <h2 className="text-xl uppercase md:text-5xl">IMPRESSIONS</h2>
+              <h2 className="text-3xl uppercase md:text-5xl">IMPRESSIONS</h2>
             }
             button={
               <>

@@ -10,11 +10,12 @@ export const metadata: Metadata = {
 
 export default async function PageLayout(props: { children: React.ReactNode }) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Nav />
-
       {props.children}
-      <NewFooter />
-    </>
+      <div className="mt-auto">
+        <NewFooter />
+      </div>
+    </div>
   )
 }
