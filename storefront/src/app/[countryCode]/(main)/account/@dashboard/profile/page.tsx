@@ -12,7 +12,7 @@ import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
   title: "Profile",
-  description: "View and edit your FAU Store profile.",
+  description: "View and edit your FAU Furniture profile.",
 }
 
 export default async function Profile() {

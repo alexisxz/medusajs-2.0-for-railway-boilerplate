@@ -4,7 +4,7 @@ import LoginTemplate from "@modules/account/templates/login-template"
 
 export const metadata: Metadata = {
   title: "Sign in",
-  description: "Sign in to your FAU Store account.",
+  description: "Sign in to your FAU Furniture account.",
 }
 
 export default function Login() {

@@ -6,9 +6,9 @@ import { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "FAU Ecommerce",
+  title: "FAU Furniture",
   description:
-    "The FAU Ecommerce is a platform that offers a unique robot lamp collection, designed and handcrafted by Christian in Luxembourg. Each lamp is a one-of-a-kind piece, combining functionality with artistic expression.",
+    "The FAU Furniture is a platform that offers a unique robot lamp collection, designed and handcrafted by Christian in Luxembourg. Each lamp is a one-of-a-kind piece, combining functionality with artistic expression.",
 }
 
 export default async function Home({

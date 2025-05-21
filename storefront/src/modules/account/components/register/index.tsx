@@ -22,10 +22,10 @@ const Register = ({ setCurrentView }: Props) => {
       data-testid="register-page"
     >
       <h1 className="mb-6 uppercase text-large-semi">
-        Become a FAU Store Member
+        Become a FAU Furniture Member
       </h1>
       <p className="mb-4 text-center text-base-regular text-ui-fg-base">
-        Create your FAU Store Member profile, and get access to an enhanced
+        Create your FAU Furniture Member profile, and get access to an enhanced
         shopping experience.
       </p>
       <form className="flex flex-col w-full" action={formAction}>
@@ -70,7 +70,7 @@ const Register = ({ setCurrentView }: Props) => {
         </div>
         <ErrorMessage error={message} data-testid="register-error" />
         <span className="mt-6 text-center text-ui-fg-base text-small-regular">
-          By creating an account, you agree to FAU Store&apos;s{" "}
+          By creating an account, you agree to FAU Furniture&apos;s{" "}
           <LocalizedClientLink
             href="/content/privacy-policy"
             className="underline"

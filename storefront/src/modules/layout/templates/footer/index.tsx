@@ -18,7 +18,7 @@ export default async function Footer() {
               href="/"
               className="uppercase txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
-              FAU Store
+              FAU Furniture
             </LocalizedClientLink>
           </div>
           <div className="grid grid-cols-2 gap-10 text-small-regular md:gap-x-16 sm:grid-cols-3">
