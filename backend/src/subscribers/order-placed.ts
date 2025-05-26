@@ -16,18 +16,18 @@ export default async function orderPlacedHandler({
   try {
     await notificationModuleService.createNotifications({
       to: order.email,
-      channel: 'email',
+      channel: "email",
       template: EmailTemplates.ORDER_PLACED,
       data: {
         emailOptions: {
-          replyTo: 'info@example.com',
-          subject: 'Your order has been placed'
+          replyTo: "info@fau-furnite.com",
+          subject: "Your order has been placed",
         },
         order,
         shippingAddress,
-        preview: 'Thank you for your order!'
-      }
-    })
+        preview: "Thank you for your order!",
+      },
+    });
   } catch (error) {
     console.error('Error sending order confirmation notification:', error)
   }
