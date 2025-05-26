@@ -40,7 +40,7 @@ export const InviteUserEmail = ({
     <Base preview={preview}>
       <Section className="mt-[32px]">
         <Img
-          src="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg"
+          src="https://www.fau-furniture.com/images/content/favicon-logo.png"
           alt="FAU Furniture"
           className="mx-auto w-28"
         />
