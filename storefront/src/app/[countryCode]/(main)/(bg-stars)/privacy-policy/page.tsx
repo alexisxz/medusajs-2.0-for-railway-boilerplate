@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
           consent.
         </p>
         <p>
-          <strong>User rights:</strong> Contact Christiawoltz@hotmail.com for
+          <strong>User rights:</strong> Contact Christianwoltz@hotmail.com for
           access, correction, deletion, or to object to processing.
         </p>
         <p>

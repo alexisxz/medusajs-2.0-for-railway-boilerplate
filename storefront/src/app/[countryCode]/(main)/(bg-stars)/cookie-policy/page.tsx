@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
           consent or change cookie preferences.
         </p>
         <p>
-          If you have any questions, contact us at Christiawoltz@hotmail.com.
+          If you have any questions, contact us at Christianwoltz@hotmail.com.
         </p>
       </div>
     </section>

@@ -30,7 +30,7 @@ export default function TermsOfUsePage() {
           law. Disputes will be resolved in its courts.
         </p>
         <p>
-          <strong>Contact:</strong> Christiawoltz@hotmail.com | +352661661771
+          <strong>Contact:</strong> Christianwoltz@hotmail.com | +352661661771
         </p>
       </div>
     </div>
