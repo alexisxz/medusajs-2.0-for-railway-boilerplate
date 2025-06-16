@@ -34,13 +34,23 @@ export default async function Home({
           style={{ backgroundImage: "url('/images/content/bg-stars.png')" }}
         >
           {/* ROBOT */}
-          <div className="md:absolute bottom-0 md:h-[80vh] flex flex-col justify-end items-end order-last">
+          <div className="md:absolute bottom-0 md:h-[80vh] flex flex-col justify-end items-end order-last group">
+            {/* Default image (no light) – visible until hover */}
             <Image
-              src="/images/content/home-hero_bot.png"
+              src="/images/content/Roboter_without_light_new.png"
               width={2880}
               height={1500}
-              alt="Living room with gray armchair and two-seater sofa"
-              className="object-contain mt-auto md:max-h-[90vh]"
+              alt="Robot without light"
+              className="object-contain mt-auto md:max-h-[90vh] block group-hover:hidden"
+            />
+
+            {/* Light-on image – hidden until hover */}
+            <Image
+              src="/images/content/Roboter_light_new.png"
+              width={2880}
+              height={1500}
+              alt="Robot with light"
+              className="object-contain mt-auto md:max-h-[90vh] hidden group-hover:block"
             />
           </div>
 
