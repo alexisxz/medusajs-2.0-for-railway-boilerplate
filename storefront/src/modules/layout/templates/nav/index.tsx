@@ -54,6 +54,14 @@ export default async function Nav() {
                 </LocalizedClientLink>
               )} */}
               <LocalizedClientLink
+                href="/store"
+                size="md"
+                className="p-2 flex-1 h-full max-md:hidden md:h-auto bg-[#77C091] text-white font-bold rounded-lg uppercase"
+                variant="outline"
+              >
+                Shop
+              </LocalizedClientLink>
+              <LocalizedClientLink
                 className="hover:opactiy-80"
                 href="/account"
                 data-testid="nav-account-link"
