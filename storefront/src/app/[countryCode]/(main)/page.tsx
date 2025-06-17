@@ -280,14 +280,14 @@ const productsImage = [
     src: "/images/content/_LF_6401_gelb.png",
     alt: "Product Image 3",
   },
-  // {
-  //   src: "/images/content/_LF_6401_grün_fluorisierend1.png",
-  //   alt: "Product Image 4",
-  // },
-  // {
-  //   src: "/images/content/_LF_6401_grün1.png",
-  //   alt: "Product Image 5",
-  // },
+  {
+    src: "/images/content/_LF_6401_gruen 2.png",
+    alt: "Product Image 4",
+  },
+  {
+    src: "/images/content/_LF_6401_gruen_fluorisierend 2.png",
+    alt: "Product Image 5",
+  },
   {
     src: "/images/content/_LF_6401_hellblau.png",
     alt: "Product Image 6",
@@ -307,14 +307,6 @@ const productsImage = [
   {
     src: "/images/content/_LF_6401_rot.png",
     alt: "Product Image 10",
-  },
-  {
-    src: "/images/content/_LF_6401_grün 2.png",
-    alt: "Product Image 11",
-  },
-  {
-    src: "/images/content/_LF_6401_grün_fluorisierend 2.png",
-    alt: "Product Image 12",
   },
 ]
 
