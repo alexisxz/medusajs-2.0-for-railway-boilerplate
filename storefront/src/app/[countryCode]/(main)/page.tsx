@@ -281,11 +281,11 @@ const productsImage = [
     alt: "Product Image 3",
   },
   {
-    src: "/images/content/_LF_6401_grün_fluorisierend.png",
+    src: "/images/content/_LF_6401_grün_fluorisierend1.png",
     alt: "Product Image 4",
   },
   {
-    src: "/images/content/_LF_6401_grün.png",
+    src: "/images/content/_LF_6401_grün1.png",
     alt: "Product Image 5",
   },
   {
