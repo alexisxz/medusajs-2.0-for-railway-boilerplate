@@ -269,16 +269,44 @@ export default async function Home({
 
 const productsImage = [
   {
-    src: "/images/content/robot-red.png",
+    src: "/images/content/_LF_6401_blau.png",
     alt: "Product Image 1",
   },
   {
-    src: "/images/content/robot-yellow.png",
+    src: "/images/content/_LF_6401_gelb_fluorisierend.png",
     alt: "Product Image 2",
   },
   {
-    src: "/images/content/robot-blue.png",
+    src: "/images/content/_LF_6401_gelb.png",
     alt: "Product Image 3",
+  },
+  {
+    src: "/images/content/_LF_6401_grün_fluorisierend.png",
+    alt: "Product Image 4",
+  },
+  {
+    src: "/images/content/_LF_6401_grün.png",
+    alt: "Product Image 5",
+  },
+  {
+    src: "/images/content/_LF_6401_hellblau.png",
+    alt: "Product Image 6",
+  },
+  {
+    src: "/images/content/_LF_6401_lila.png",
+    alt: "Product Image 7",
+  },
+  {
+    src: "/images/content/_LF_6401_orange.png",
+    alt: "Product Image 8",
+  },
+  {
+    src: "/images/content/_LF_6401_rot_fluorisierend.png",
+    alt: "Product Image 9",
+  },
+  {
+    src: "/images/content/_LF_6401_rot.png",
+    alt: "Product Image 10",
   },
 ]
 
