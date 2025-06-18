@@ -39,10 +39,20 @@ export const NewFooter: React.FC = () => {
                 signal@fau.com
               </a>
               <div className="flex items-center gap-2">
-                <a className="w-10 h-10">
+                <a
+                  className="w-10 h-10"
+                  href="https://www.facebook.com/faurnitures/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FacebookSVG />
                 </a>
-                <a className="w-10 h-10">
+                <a
+                  className="w-10 h-10"
+                  href="https://www.instagram.com/fau_furnitures/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <InstagramSVG />
                 </a>
               </div>
