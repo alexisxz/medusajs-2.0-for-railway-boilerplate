@@ -13,7 +13,7 @@
 </h1>
 
 <p align="center">
-Combine Medusa's modules for your commerce backend with the newest Next.js 14 features for a performant storefront.</p>
+Combine Medusa's modules for your commerce backend with the newest Next.js 14 features for a performant storefront</p>
 
 <p align="center">
   <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
