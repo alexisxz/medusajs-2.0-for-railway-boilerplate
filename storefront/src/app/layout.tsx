@@ -1,6 +1,7 @@
 import { getBaseURL } from "@lib/util/env"
 import { Metadata } from "next"
 import localFont from "next/font/local"
+import Script from "next/script"
 import "styles/globals.css"
 
 const blauerNue = localFont({
@@ -20,6 +21,20 @@ export default function RootLayout(props: { children: React.ReactNode }) {
       className={`${blauerNue.variable} !font-blauer antialiased`}
       data-mode="light"
     >
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8XV30RBN3D"
+          strategy="afterInteractive"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8XV30RBN3D');
+          `}
+        </Script>
+      </head>
       <body>
         <main className="relative max-w-[2560px] mx-auto">
           {props.children}
