@@ -1,4 +1,5 @@
 import { getBaseURL } from "@lib/util/env"
+import { GoogleTagManager } from "@next/third-parties/google"
 import { Metadata } from "next"
 import localFont from "next/font/local"
 import Script from "next/script"
@@ -35,6 +36,8 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           `}
         </Script>
       </head>
+      <GoogleTagManager gtmId="GTM-NPTPCXB9" />
+
       <body>
         <main className="relative max-w-[2560px] mx-auto">
           {props.children}
